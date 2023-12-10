@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pogoda w Polsce i w Europie</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        body {
+            background-color: #e8e9ea;
+        }
+
+        .header {
+            background-image: url('chmurka.png');
+            width: 80%;
+            height: 150px;
+            display: inline-block;
+        }
+
+        .logo{
+            float: left;
+            background: linear-gradient(to bottom, #2aabd2, #087cc0);
+            width: 20%;
+            height: 150px;
+            display: inline-block;
+        }
+
+        .text-block{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .table{
+            margin-left: 140px; 
+            margin-top: 80px;
+        }
+    </style>
+    </head>
+<body>
+    <img src="logo.svg" class="logo">
+    <header class="header"></header>
+    <p class="text-block">
+        Witaj na mojej stronie. Znajdziesz tutaj zestawienie ciekawszych artykułów na temat elementów pogody, które warto poczytać by lepiej zrozumieć zjawiska, 
+        które kształtują pogodę w Polsce i w Europie.
+    </p>
+    <table class="table" cellspacing="0px" cellpadding="5px" border="1px">
+        <thead>
+            <tr style="padding: 20px;">
+                <th>Strona</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jak wygląda proces nadawania imion wyżom i niżom?</td>
+                <td><a href="https://dobrapogoda24.pl/mapa-synoptyczna-polski">Nadawanie imion układom barycznym</td>
+            </tr>
+            <tr>
+                <td>Czym jest Indeks NAO?</td>
+                <td><a href="https://www.wikiwand.com/pl/Oscylacja_północnoatlantycka">Czym jest indeks NAO</td>
+            </tr>
+            <tr>
+                <td>Czym jest Indeks AO?</td>
+                <td><a href="https://innpoland.pl/158145,utrzymujaca-sie-dodatnia-oscylacja-arktyczna-powodem-cieplej-zimy">
+                Czym jest indeks AO</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Aktualna prognoza wartości indeksu NAO</td>
+                <td><a href="https://www.cpc.ncep.noaa.gov/products/precip/CWlink/pna/nao.gefs.sprd2.png">Prognoza NAO</a></td>
+            </tr>
+            <tr>
+                <td>Aktualna prognoza wartości indeksu AO</td>
+                <td><a href="https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/ao.gefs.sprd2.png">Prognoza AO</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
