@@ -5,14 +5,14 @@ import socket
 class HTTP10Server(HTTPServer):
     def get_request(self):
         request, client_address = self.socket.accept()
-        request.settimeout(10)  # ustawienie limitu czasu oczekiwania na żądanie
         return (request, client_address)
+
 
 class HTTP10RequestHandler(SimpleHTTPRequestHandler):
     protocol_version = "HTTP/1.1"
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     host = "localhost"
     port = 8000
 
