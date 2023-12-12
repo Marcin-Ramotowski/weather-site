@@ -45,6 +45,29 @@
             height: 120rem;
         }
 
+        .cloud_image{
+            height: 12rem;
+            margin-left: -1rem;
+        }
+
+        .text-overlay {
+            font-weight: bold;
+        }
+
+        .cloud_link {
+            position: relative;
+            margin-left: -1.5rem;
+        }
+
+        .cloud_link a{
+            position: absolute;
+            top: 6rem;
+            left: 8rem;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            text-align: center;
+        }
+
         .table{
             margin-left: 18%; 
             margin-top: 2%;
@@ -64,7 +87,25 @@
 <body>
     <img src="logo.svg" class="logo">
     <div class="design"></div>
-    <div class="menu"></div>
+    <div class="menu">
+        <div class="cloud_link">
+            <img class="cloud_image" src="chmurka.svg">
+            <a class="text-overlay" href="index.html">Wstęp</a>
+        </div>
+        <div class="cloud_link">
+            <img class="cloud_image" src="chmurka.svg">
+            <a class="text-overlay" href="baric.html">Mapa baryczna</a>
+        </div>
+        <div class="cloud_link">
+            <img class="cloud_image" src="chmurka.svg">
+            <a class="text-overlay" href="nao.html">NAO</a>
+        </div>
+        <div class="cloud_link">
+            <img class="cloud_image" src="chmurka.svg">
+            <a class="text-overlay" href="ao.html">AO</a>
+        </div>
+    </div>
+    <h1 class="header">Wprowadzenie</h1>
     <p class="text-block">
         Witaj na stronie chmurka.pl. Wprowadzimy Cię w to, czym tak naprawdę są pogoda i klimat i jakie czynniki wpływają na to,
         jaki typ pogody możesz obserwować danego dnia za oknem. Zacznijmy na początek od podstawowych pojęć.
