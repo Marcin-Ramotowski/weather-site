@@ -7,26 +7,23 @@
     <link rel="stylesheet" href="main.css">
     </head>
 <body>
-    <img src="logo.svg" class="logo" alt="logo.svg">
+    <img src="logo.svg" class="logo" alt="logo">
     <div class="design"></div>
     <div class="menu">
         <div class="cloud_link">
             <img class="cloud_image" src="chmurka.svg" alt="obrazek chmurki">
-            <a class="text-overlay" href="index.html">Wstęp</a>
+            <a class="text-overlay" href="index.php">Wstęp</a>
         </div>
         <div class="cloud_link">
             <img class="cloud_image" src="chmurka.svg" alt="obrazek chmurki">
-            <a class="text-overlay" href="baric.html">Mapa baryczna</a>
+            <a class="text-overlay" href="baric.php">Mapa baryczna</a>
         </div>
         <div class="cloud_link">
             <img class="cloud_image" src="chmurka.svg" alt="obrazek chmurki">
-            <a class="text-overlay" href="nao.html">NAO</a>
+            <a class="text-overlay" href="nao.php">NAO</a>
         </div>
         <div class="cloud_link">
             <img class="cloud_image" src="chmurka.svg" alt="obrazek chmurki">
-            <a class="text-overlay" href="ao.html">AO</a>
+            <a class="text-overlay" href="ao.php">AO</a>
         </div>
     </div>
-    <h1 class="header">Prognoza AO </h1>
-    <img class="data" src="https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/ao.gefs.sprd2.png"
-        alt="Oscylacja Arktyczna">

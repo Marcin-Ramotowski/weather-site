@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="pl">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pogoda w Polsce i w Europie</title>
-    <link rel="stylesheet" href="main.css">
-    </head>
-<body>
-    <img src="logo.svg" class="logo" alt="logo">
-    <div class="design"></div>
-    <div class="menu">
-        <div class="cloud_link">
-            <img class="cloud_image" src="chmurka.svg" alt="obrazek chmurki">
-            <a class="text-overlay" href="index.html">Wstęp</a>
-        </div>
-        <div class="cloud_link">
-            <img class="cloud_image" src="chmurka.svg" alt="obrazek chmurki">
-            <a class="text-overlay" href="baric.html">Mapa baryczna</a>
-        </div>
-        <div class="cloud_link">
-            <img class="cloud_image" src="chmurka.svg" alt="obrazek chmurki">
-            <a class="text-overlay" href="nao.html">NAO</a>
-        </div>
-        <div class="cloud_link">
-            <img class="cloud_image" src="chmurka.svg" alt="obrazek chmurki">
-            <a class="text-overlay" href="ao.html">AO</a>
-        </div>
-    </div>
+<?php include("template.php"); ?>
     <h1 class="header">Wprowadzenie</h1>
     <p class="text-block">
         Witaj na stronie pogoda.mikrushub.pl. Wprowadzimy Cię w to, czym tak naprawdę są pogoda i klimat i jakie czynniki wpływają na to,

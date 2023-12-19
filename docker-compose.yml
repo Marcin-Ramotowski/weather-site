@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  web:
+    image: php:7.2-apache
+    container_name: weather_site
+    hostname: weather
+    volumes:
+      - ./files:/var/www/html
+    ports:
+      - "8000:80"
