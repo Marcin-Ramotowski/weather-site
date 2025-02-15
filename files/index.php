@@ -1,7 +1,7 @@
 <?php include("template.php"); ?>
     <h1 class="header">Wprowadzenie</h1>
     <p class="text-block">
-        Witaj na stronie pogoda.mikrushub.pl. Wprowadzimy Cię w to, czym tak naprawdę są pogoda i klimat i jakie czynniki wpływają na to,
+        Witaj na stronie pogoda.marcin00.pl. Wprowadzimy Cię w to, czym tak naprawdę są pogoda i klimat i jakie czynniki wpływają na to,
         jaki typ pogody możesz obserwować danego dnia za oknem. Zacznijmy na początek od podstawowych pojęć.
     </p>
     <h2 class="header">Pogoda</h2>
