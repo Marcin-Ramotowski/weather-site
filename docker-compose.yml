@@ -3,7 +3,11 @@ services:
     image: php:8.3-apache
     container_name: weather_site
     hostname: weather
+    networks:
+      - reverse-proxy
     volumes:
       - ./files:/var/www/html
-    ports:
-      - "8000:80"
+
+networks:
+  reverse-proxy:
+    external: true
