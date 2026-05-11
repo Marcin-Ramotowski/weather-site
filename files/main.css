@@ -1,81 +1,232 @@
-*{
-    margin: 0px;
+:root {
+    --blue-700: #0071bc;
+    --blue-500: #2aabd2;
+    --blue-50: #e7f4fb;
+    --bg: #e8e9ea;
+    --surface: #ffffff;
+    --text: #1a2638;
+    --text-muted: #5a6677;
+    --border: #d0d7de;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --radius: 8px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #e8e9ea;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-p{
-    margin-top: 2%;
-    margin-left: 18%;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-.source{
-    font-size: small;
-    margin: 0 0 0 25rem;
+/* ---------- Header / Nav ---------- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to bottom, var(--blue-500), var(--blue-700));
+    box-shadow: var(--shadow);
 }
 
-.design {
-    background-image: url('chmurka.png');
-    background-repeat: round;
-    width: 85%;
-    height: 150px;
-    margin: 0 0 0 15%;
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-.logo{
-    float: left;
-    background: linear-gradient(to bottom, #2aabd2, #0071bc);
-    width: 15%;
-    height: 150px;
+.logo {
+    height: 48px;
+    width: auto;
+    display: block;
 }
 
-.menu{
-    float: left;
-    background: linear-gradient(to bottom, #0071bc, #086dc0);
-    width: 15%;
-    height: 120rem;
-}
-
-.cloud_image{
-    height: 12rem;
-    margin-left: -1rem;
-}
-
-.text-overlay {
-    font-weight: bold;
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem 0.5rem;
+    flex: 1;
 }
 
 .cloud_link {
     position: relative;
-    margin-left: -1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: var(--radius);
+    transition: transform 0.15s ease;
 }
 
-.cloud_link a{
+.cloud_link:hover {
+    transform: translateY(-2px);
+}
+
+.cloud_link:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85);
+}
+
+.cloud_image {
+    width: clamp(72px, 11vw, 108px);
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
+
+.text-overlay {
     position: absolute;
-    top: 6rem;
-    left: 8rem;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 0.72rem;
+    color: var(--text);
     text-align: center;
+    padding: 0 0.4rem;
+    pointer-events: none;
+    line-height: 1.15;
 }
 
-.table{
-    margin-left: 18%; 
-    margin-top: 2%;
+/* ---------- Main content ---------- */
+
+.content {
+    max-width: 70ch;
+    margin-inline: auto;
+    padding: 1.5rem 1.25rem 3rem;
 }
 
-.header{
-    margin-left: 20%;
-    margin-top: 2%;
-}
-.nao_image{
-    margin-top: 10px;
-    margin-left: 5rem;
+.content h1,
+.content h2,
+.content h3 {
+    margin-block: 1.5rem 0.5rem;
+    color: var(--blue-700);
+    line-height: 1.3;
 }
 
-.data{
-    width: 80%;
-    padding: 2rem;
+.content h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.content h2 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.content p {
+    margin-block: 0.75rem;
+}
+
+.content a {
+    color: var(--blue-700);
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.source {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+    word-break: break-word;
+}
+
+.source a {
+    color: inherit;
+}
+
+/* ---------- Images (NAO phases, weather data) ---------- */
+
+.nao_image,
+.data {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background: var(--surface);
+}
+
+/* ---------- Table ---------- */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block: 1rem;
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.table th,
+.table td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.table th {
+    background: var(--blue-50);
+    color: var(--blue-700);
+    font-weight: 700;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr:nth-child(even) td {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* ---------- Tablet+ ---------- */
+
+@media (min-width: 768px) {
+    .site-header {
+        padding: 0.75rem 2rem;
+    }
+
+    .logo {
+        height: 64px;
+    }
+
+    .text-overlay {
+        font-size: 0.95rem;
+    }
+
+    .content {
+        padding: 2rem 2rem 4rem;
+    }
 }
