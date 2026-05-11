@@ -45,11 +45,17 @@
     <p>Indeks NAO jest ważny dla prognoz pogody i klimatu w regionie Atlantyku, zwłaszcza w okresach zimowych. Fluktuacje tego indeksu mogą mieć istotny wpływ na temperatury, opady atmosferyczne i inne zjawiska atmosferyczne w obszarze objętym oscylacją.</p>
 
     <h2>Indeks AO</h2>
-    <p>AO to skrót od Oscylacja Arktyczna (Arctic Oscillation, AO). Jest to klimatyczna oscylacja atmosferyczna, która występuje w obszarze arktycznym. AO mierzy zmienność ciśnienia atmosferycznego wokół obszaru bieguna północnego.</p>
+    <p>Indeks AO, czyli Oscylacja Arktyczna (Arctic Oscillation), opisuje zmiany w układzie ciśnienia atmosferycznego nad Arktyką i w średnich szerokościach geograficznych półkuli północnej. W praktyce pokazuje on, jak bardzo „zamknięte" lub „rozszczelnione" jest zimne powietrze wokół bieguna północnego.</p>
 
-    <p>Oscylacja Arktyczna ma dwa skrajne stany: dodatni i ujemny. W fazie dodatniej obserwuje się niższe ciśnienie atmosferyczne na obszarze arktycznym, co sprzyja silniejszym wiatrom zachodnim. To może wpływać na rozkład temperatur i opadów w różnych regionach na półkuli północnej. W fazie ujemnej ciśnienie atmosferyczne w obszarze arktycznym jest wyższe, co może prowadzić do zmniejszenia siły wiatrów zachodnich.</p>
+    <p>Można to sobie wyobrazić jako pierścień silnych wiatrów (wir polarny), który otacza Arktykę i utrzymuje zimne powietrze na północy. AO mówi nam, czy ten pierścień jest silny i zwarty, czy raczej osłabiony i pofalowany.</p>
 
-    <p>Zmiany w Oscylacji Arktycznej mogą wpływać na warunki pogodowe i klimatyczne, zwłaszcza w Ameryce Północnej, Europie i Azji. Na przykład, faza ujemna AO może zwiększać szanse na zimne i śnieżne zimy w niektórych obszarach, podczas gdy faza dodatnia może sprzyjać łagodniejszym i cieplejszym warunkom. Niemniej jednak, wpływ AO na lokalne warunki atmosferyczne zależy od innych czynników klimatycznych, co sprawia, że prognozowanie jest trudne. AO jest jednym z elementów, które naukowcy badają w kontekście globalnych zmian klimatycznych.</p>
+    <p>Gdy AO jest w fazie dodatniej, nad Arktyką dominuje niższe ciśnienie, a wokół niej krążą silne wiatry zachodnie. Tworzą one „barierę", która zatrzymuje zimne powietrze w rejonach polarnych. W efekcie sprzyja łagodnym zimom w Europie, Ameryce Północnej i Azji.</p>
+
+    <p>W fazie ujemnej AO sytuacja się odwraca - nad Arktyką pojawia się wyższe ciśnienie, a cyrkulacja powietrza słabnie i staje się bardziej falista. To pozwala zimnym masom powietrza przemieszczać się na południe. W takich warunkach rośnie prawdopodobieństwo napływów mroźnego powietrza i występowania surowszych zim w Europie, Ameryce Północnej i Azji.</p>
+
+    <p>W przeciwieństwie do NAO, które opisuje konkretny region Atlantyku, AO ma charakter bardziej ogólny - obejmuje całą półkulę północną i wpływa na ogólny układ cyrkulacji atmosferycznej. Dlatego często traktuje się go jako „szersze tło", które może wzmacniać lub osłabiać wpływ innych zjawisk, takich jak NAO.</p>
+
+    <p>Indeks AO jest szczególnie istotny zimą, gdy jego faza może decydować o tym, czy chłodne powietrze pozostanie w Arktyce, czy „rozleje się" na niższe szerokości geograficzne.</p>
 
     <h2>Inne ciekawe artykuły na temat pogody i klimatu</h2>
     <table class="table">
